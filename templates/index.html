@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Furcadia GIF => FOX5 Portrait Converter</h1>
+
+<form action="submit" method="post"
+      enctype="multipart/form-data"
+      accept="image/gif">
+    <p>Select image to upload:</p>
+    <input type="file" name="file" id="file">
+    <br /><br />
+    <input type="submit" value="Convert!" name="submit">
+</form>
+{% endblock %}
